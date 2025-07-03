@@ -30,17 +30,29 @@ Cache data and models for faster load times
 
 chatbot_project/
 ├── app.py                  # Streamlit UI and chatbot integration
+
 ├── src/
+
 │   ├── pdf_utils.py        # PDF text extraction and chunking
+
 │   ├── embedding_utils.py  # Embeddings + FAISS vector database
+
 │   └── generator_utils.py  # FLAN-T5 model-based answer generation
+
 ├── requirements.txt        # Python dependencies
+
 ├── data/
+
 │   └── AI Training Document.pdf  # PDF source document for QA
+
 ├── chunks/
+
 │   └── document_chunks.pkl  # Saved text chunks (optional)
+
 ├── vectordb/
+
 │   └── document_index.faiss # Saved FAISS index (optional)
+
 
 
 # Install dependencies:

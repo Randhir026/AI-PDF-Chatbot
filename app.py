@@ -12,7 +12,7 @@ from src.pdf_utils import extract_text_from_pdf, chunk_text
 from src.embedding_utils import Embedder
 from src.generator import Generator
 
-PDF_PATH=r"C:\Users\Randhir kumar\OneDrive\Desktop\chatbot\data\AI Training Document.pdf"
+PDF_PATH=r"AI Training Document.pdf"
 CHUNK_PATH="chunks/document_chunks.pkl"
 INDEX_PATH="vectordb/document_index.faiss"
 

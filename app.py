@@ -24,7 +24,7 @@ st.sidebar.header("📂 Document Info")
 
 @st.cache_resource
 def load_data():
-    # Load or create chunks
+    
     if os.path.exists(CHUNK_PATH):
         with open(CHUNK_PATH, "rb") as f:
             chunks=pickle.load(f)
@@ -37,7 +37,7 @@ def load_data():
 
     embedder=Embedder()
 
-    # Try loading FAISS index; if not found or index size mismatches, regenerate
+    
     index_loaded = embedder.load_index(INDEX_PATH)
     if not index_loaded or embedder.index.ntotal != len(chunks):
         embedder.generate_embeddings(chunks)

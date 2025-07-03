@@ -19,7 +19,7 @@ class Embedder:
         query_vector=self.model.encode([query],convert_to_numpy=True).astype('float32')
         _, indices=self.index.search(query_vector,k)
 
-        # Safety: ignore indices that are out of range
+        
         return [self.chunks[i] for i in indices[0] if i < len(self.chunks)]
 
     def save_index(self,path='vectordb/document_index.faiss'):

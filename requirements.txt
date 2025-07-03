@@ -1,0 +1,9 @@
+streamlit
+nltk
+PyMuPDF
+faiss-cpu
+sentence-transformers
+transformers
+torch
+pickle5
+tqdm
